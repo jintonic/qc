@@ -1,0 +1,9 @@
+services:
+  sh:
+    image: python
+    command: bash
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 8888:8888
